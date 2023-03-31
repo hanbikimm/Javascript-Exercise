@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery 실습 3</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #my-div {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="my-div"></div>
+
+    <script>
+        // 마우스 오버 시 배경색 변경하기
+        $(document).ready(function () {
+            $('#my-div').hover(function(){
+                $('#my-div').css('background-color', 'yellow');
+            });
+        });
+    </script>
+</body>
+
+</html>

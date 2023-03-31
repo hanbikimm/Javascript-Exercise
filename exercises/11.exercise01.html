@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery 실습 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <button id="change-text">텍스트 변경하기</button>
+    <div id="my-div">원래의 텍스트</div>
+
+    <script>
+        // 버튼 클릭 시 div 태그의 텍스트 변경하기
+        $('#change-text').click(function(){
+            $('#my-div').text('변경된 텍스트');
+        });
+    </script>
+</body>
+</html>

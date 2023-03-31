@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 목록</title>
+    <link href="css/MemberListCustom.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" 
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="script/MemberListScript.js"></script>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>회원정보 입력</caption>
+            <thead>
+                <tr>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>전화번호</th>
+                    <th>주소</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class="inputID">
+                            <input type="text" id="id" maxlength="15" onblur="checkID()" required/>
+                            <span id="checkID"></span>
+                        </td>
+                        <td><input type="text" id="name" maxlength="5" required/></td>
+                        <td><input type="number" id="age" max="130" required/></td>
+                        <td><input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/></td>
+                        <td><input type="text" id="address" maxlength="15" required/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <button type="submit" onclick="createMember()">가입하기</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+        <p id="result"></p>
+    </div>
+    <hr/>
+    <div>
+        <table>
+            <caption>고객 리스트 !</caption>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>나이</th>
+                    <th>전화번호</th>
+                    <th>주소</th>
+                    <th>삭제</th>
+                </tr>
+            </thead>
+            <tbody id="memberList"></tbody>
+        </table>
+    </div>
+</body>
+</html>

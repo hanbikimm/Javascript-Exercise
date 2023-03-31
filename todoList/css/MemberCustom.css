@@ -1,0 +1,26 @@
+body {
+    background-color: mediumslateblue;
+}
+
+.container {
+    max-width: 700px;
+    background-color: whitesmoke;
+    padding: 20px 50px;
+}
+
+.register {
+    margin-top: 2%;
+}
+
+.login {
+    margin-top: 10%;
+}
+
+.long-btn {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-label {
+    text-indent: 0.5rem;
+}

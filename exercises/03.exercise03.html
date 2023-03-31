@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise03</title>
+</head>
+<body>
+    <script>
+        // 1.
+        for(let num=1; num<=100; num++){
+            if(num%3 == 0 && num%5 == 0){
+                console.log(num, "FizzBuzz");
+            }else if(num%3 == 0){
+                console.log(num, "Fizz");
+            }else if(num%5 == 0){
+                console.log(num, "Buzz");
+            }
+        }
+
+        // 2.
+        const arr = [3, 1, 5, 2, 4];
+
+        function getMaxValue(arr) {
+            let max = 0;
+            for(let i=0; i<arr.length; i++){
+                max = max>arr[i] ? max : arr[i];
+            }
+
+            return max;
+        }
+        console.log(getMaxValue(arr));
+
+        // // 3.
+        let month = parseInt(prompt("월을 입력하세요."));
+        switch(month){
+            case 12: 
+            case 1: 
+            case 2:
+                console.log(`${month}월은 겨울입니다.`);
+                break;
+            case 3: 
+            case 4: 
+            case 5:
+                console.log(`${month}월은 봄입니다.`);
+                break;
+            case 6: 
+            case 7: 
+            case 8:
+                console.log(`${month}월은 여름입니다.`);
+                break;
+            case 9: 
+            case 10: 
+            case 11:
+                console.log(`${month}월은 가을입니다.`);
+                break;
+        }
+    </script>
+</body>
+</html>

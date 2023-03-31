@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery 실습 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #my-image {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="my-image" src="https://via.placeholder.com/200x200" alt="이미지">
+    
+    <script>
+        // 이미지 클릭 시 크기 변경하기
+        $(document).ready(function () {
+            $('#my-image').click(function(){
+                $('#my-image').css('width', '300px');
+            });
+        });
+    </script>
+</body>
+
+</html>

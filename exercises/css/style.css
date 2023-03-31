@@ -1,0 +1,15 @@
+#title {
+    background: brown;
+    color: white;
+    padding: 30px 20px;
+}
+
+#logo {
+    width: 500px;
+    height: 500px;
+    object-fit: scale-down;
+}
+
+div {
+    text-align: center;
+}

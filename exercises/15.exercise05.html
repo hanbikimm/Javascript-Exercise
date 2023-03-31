@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery 실습 5</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <button id="add-item">리스트 아이템 추가하기</button>
+    <ul id="my-list"></ul>
+
+    <script>
+        // 버튼 클릭 시 ul 태그에 li 태그 추가하기
+        $(document).ready(function () {
+            $('#add-item').click(function(){
+                $('#my-list').append('<li>아이템</li>');
+            });
+        });
+    </script>
+</body>
+
+</html>
