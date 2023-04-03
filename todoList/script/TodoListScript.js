@@ -27,7 +27,6 @@ function makeTodoElement(todoItem){
     );
     $(`#${todoItem.ID}`).append(
         $('<input>').prop({
-            className: 'check',
             type: 'checkbox',
             checked: todoItem.TODO_CHECK
         })

@@ -24,3 +24,12 @@ body {
 .form-label {
     text-indent: 0.5rem;
 }
+
+#back {
+    text-decoration: none;
+    color: black;
+}
+
+#back:hover {
+    color: blue;
+}
